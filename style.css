@@ -1,0 +1,213 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+img{
+    width: 100%;
+    height: auto;
+}
+body{
+    background-color: black;
+}
+
+.nowrap{
+    white-space: nowrap;
+}
+
+.header{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    background-color: rgb(0, 0, 0);
+
+}
+.subject-logo{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 13%;
+}
+.subject-logo span{
+    font-size: 16px;
+    color: grey;
+}
+.search{
+    display: flex;
+    align-items: center;
+    height: 40px;
+    width: 30%;
+    border-radius: 20px;
+    border: 1px solid gold;
+}
+.search i{
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: grey;
+}
+.search input{
+    width: 100%;
+    height: 100%;
+    border: none;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    outline: none;
+    background-color: transparent;
+    color: grey;
+    
+}
+.search input:focus{
+    border: 1px solid grey;
+    background-color: rgba(255, 217, 0, 0.229);
+    
+}
+.header-nav{
+    /* border: 1px solid black;    */
+    display: flex;
+    margin-right: 5%;
+    width: max(10%, 100px);
+    justify-content: space-between;
+}
+.header-nav a{
+    color: gold;
+}
+.section-one{
+    height: min(700px, 100vw);
+    overflow: hidden;
+    /* display: flex; */
+    /* border: 1px solid red; */
+    justify-content: center;
+    position: relative;
+}
+.oversize{
+    animation: bigging 8s ease-in-out infinite;
+}
+@keyframes bigging {
+    0%{
+        width: 100%;
+        opacity: 0%;
+
+    }
+    
+    10%{
+        opacity: 100%;
+    }
+    100%{
+        width: 120%;
+        opacity: 100%;
+    }
+}
+
+.hero-absolute{
+    width: 90%;
+    position: absolute;
+    left: 10%;
+    color: gold;
+    -webkit-text-stroke-color: black;
+    -webkit-text-stroke-width: 0.1px;
+    top: 40%;
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+}
+.circle{
+    min-width: 30px;
+    max-width: 30px;
+    min-height: 30px;
+    max-height: 30px;
+    border-radius: 50%;
+    background-color: grey;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.papa-circle{
+    display: flex;
+    align-items: center;
+    gap: 5%;
+}
+.seperate{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 5%;
+    row-gap: 10px;
+}
+.hero-absolute  h2{
+    font-size: min(5vw, 24px);
+}
+.hero-absolute  p{
+    font-size: min(5vw, 20px);
+}
+footer {
+    background-color: #111;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+footer div {
+    margin-bottom: 10px;
+}
+
+.whatsapp-icon, .instagram-icon, .facebook-icon {
+    color: gold;
+    margin-right: 10px;
+    font-size: 20px;
+}
+
+.forty{
+    min-width: 40px;
+}
+
+.section-two{
+    width: 90%;
+    /* border: 10px solid rgb(255, 0, 0); */
+    margin: 5rem auto;
+
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    row-gap: 1rem;
+}
+figure{
+    width: 47%;
+    overflow: hidden;
+    max-height: 40vw;
+    min-height: 39vw;
+    position: relative;
+}
+figcaption{
+    color: gold;
+    position: absolute;
+    bottom: 5%;
+    left: 3%;
+    font-size: min(20px, 3vw);
+}
+.a{
+    color: black;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    font-size: min(20px, 3vw);
+    background-color: gold;
+    padding: 5px;
+    text-decoration: none;
+}
+.hider{
+    width: 100px;
+    overflow: hidden;
+}
+.v{
+    object-fit: cover;
+}
